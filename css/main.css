@@ -3,6 +3,7 @@ html {
 }
 .outer-wrapper {
   background: repeating-linear-gradient(45deg, #b3fbff, #b3fbff 10px, #c9fcff 20px,  #d4fdff 10px);
+  height: 500px;
 
 }
 
@@ -24,26 +25,29 @@ p {
 }
 .cherry {
   top: 10px;
-  left: 350px;
+  left: 450px;
 }
 
 .cone {
   top: 575px;
-  left: 350px;
+  left: 450px;
 }
 
 .chocolate {
   top: 275px;
-  left: 350px
+  left: 450px
 }
 
 .mint {
   top: 400px;
-  left: 350px;
+  left: 450px;
 }
 
 .vanilla {
   top: 175px;
-  left: 350px;
+  left: 450px;
+}
+.ice-cream-cone {
+  max-width: 50px;
 }
 }
