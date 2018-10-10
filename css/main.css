@@ -1,8 +1,49 @@
 html {
-  background: repeating-linear-gradient(to right, #b3fbff, #b3fbff 10px, #c9fcff 20px,  #d4fdff 10px);
   font-family: 'Fredoka One';
+}
+.outer-wrapper {
+  background: repeating-linear-gradient(45deg, #b3fbff, #b3fbff 10px, #c9fcff 20px,  #d4fdff 10px);
+
 }
 
 h1 {
   color: #990073;
+  transform: rotate(-11deg);
+}
+p {
+  color: #c09;
+  transform: rotate(-4deg);
+}
+.btn {
+  color: #c09;
+}
+
+.text {
+  max-width: 19em;
+  transform-origin: left center;
+}
+.cherry {
+  top: 10px;
+  left: 350px;
+}
+
+.cone {
+  top: 575px;
+  left: 350px;
+}
+
+.chocolate {
+  top: 275px;
+  left: 350px
+}
+
+.mint {
+  top: 400px;
+  left: 350px;
+}
+
+.vanilla {
+  top: 175px;
+  left: 350px;
+}
 }
