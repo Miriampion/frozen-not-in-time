@@ -1,5 +1,5 @@
 html {
-  font-family: 'Fredoka One', sans-serif;
+  font-family: "Fredoka One", sans-serif;
 }
 .outer-wrapper {
   background: repeating-linear-gradient(-45deg, #b3fbff, #b3fbff 10px, #c9fcff 20px,  #d4fdff 10px);
@@ -10,48 +10,54 @@ html {
 h1 {
   color: #990073;
   transform: rotate(-11deg);
+  text-shadow: 1px 5px 48px #e2e2e2;
 }
 p {
   color: #c09;
   transform: rotate(-4deg);
+  text-shadow: 1px 5px 48px #e2e2e2;
 }
-.btn {
+.btn-ghost {
   color: #c09;
+  border-color: #c09;
 }
+
+.btn-ghost:hover {
+  color: #990073;
+  border-color: #990073;
+  background-color: transparent;
+}
+
 
 .text {
   transform-origin: left center;
+  animation: text 2000ms linear forwards;
+}
+
+.intro {
+  max-width: 19em;
+  margin-bottom: 1.5em;
 }
 
 .ice-cream-cone {
-  min-height: 500px;
+  min-height: 480px;
 }
 
 .cherry {
   top: -30px;
   left: 50%;
   height: 180px;
-  transform:translateX(-50%);
-  animation: cherry-top 1s 5s linear forwards;
-}
-@keyframes cherry-top {
-
-   0% {
-  bottom: 100%;
- }
-
-  100% {
-  bottom: 30px;
-   }
-
+  transform: translateX(-50%);
+  animation: cherry-top 1800ms linear forwards;
 }
 
 .cone {
   top: 305px;
   left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
   position: absolute;
   width: 180px;
+  animation: cone 600ms linear forwards;
 }
 
 .chocolate {
@@ -60,6 +66,7 @@ p {
   transform:translateX(-50%);
   position: absolute;
   width: 180px;
+  animation: chocolate 1400ms linear forwards;
 }
 
 .mint {
@@ -68,6 +75,7 @@ p {
   transform:translateX(-50%);
   position: absolute;
   width: 180px;
+  animation: mint 1000ms linear forwards;
 }
 
 .vanilla {
@@ -76,6 +84,73 @@ p {
   transform:translateX(-50%);
   position: absolute;
   width: 180px;
+  animation: vanilla 1600ms linear forwards;
 }
 
+@keyframes cherry-top {
+
+   0% {
+    top: -530px;
+ }
+
+  100% {
+    top: -30px;
+   }
+
+}
+
+@keyframes cone {
+  0% {
+    top: -905px;
+  }
+
+  100% {
+    top: 305px;
+  }
+}
+
+@keyframes chocolate {
+  0% {
+    top: -920px;
+  }
+
+  100% {
+    top: 120px;
+  }
+}
+
+@keyframes mint {
+  0% {
+    top: -2500px;
+  }
+
+  100% {
+    top: 200px;
+  }
+}
+
+@keyframes vanilla {
+  0% {
+    top:-570px;
+  }
+
+  100% {
+    top: 50px;
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+    filter: blur(30px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
