@@ -1,10 +1,10 @@
 html {
   font-family: "Fredoka One", sans-serif;
 }
-.outer-wrapper {
-  background: repeating-linear-gradient(-45deg, #b3fbff, #b3fbff 10px, #c9fcff 20px,  #d4fdff 10px);
-  height: 500px;
 
+.outer-wrapper {
+  background: repeating-linear-gradient(-45deg, #b3fbff, #b3fbff 10px, #c9fcff 20px, #d4fdff 10px);
+  height: 500px;
 }
 
 h1 {
@@ -12,11 +12,13 @@ h1 {
   transform: rotate(-11deg);
   text-shadow: 1px 5px 48px #e2e2e2;
 }
+
 p {
   color: #c09;
   transform: rotate(-4deg);
   text-shadow: 1px 5px 48px #e2e2e2;
 }
+
 .btn-ghost {
   color: #c09;
   border-color: #c09;
@@ -25,9 +27,8 @@ p {
 .btn-ghost:hover {
   color: #990073;
   border-color: #990073;
-  background-color: transparent;
+  background-color: #c09;
 }
-
 
 .text {
   transform-origin: left center;
@@ -63,7 +64,7 @@ p {
 .chocolate {
   top: 120px;
   left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
   position: absolute;
   width: 180px;
   animation: chocolate 1400ms linear forwards;
@@ -72,7 +73,7 @@ p {
 .mint {
   top: 200px;
   left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
   position: absolute;
   width: 180px;
   animation: mint 1000ms linear forwards;
@@ -81,7 +82,7 @@ p {
 .vanilla {
   top: 50px;
   left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
   position: absolute;
   width: 180px;
   animation: vanilla 1600ms linear forwards;
@@ -89,17 +90,18 @@ p {
 
 @keyframes cherry-top {
 
-   0% {
+  0% {
     top: -530px;
- }
+  }
 
   100% {
     top: -30px;
-   }
+  }
 
 }
 
 @keyframes cone {
+
   0% {
     top: -905px;
   }
@@ -107,9 +109,11 @@ p {
   100% {
     top: 305px;
   }
+
 }
 
 @keyframes chocolate {
+
   0% {
     top: -920px;
   }
@@ -117,9 +121,11 @@ p {
   100% {
     top: 120px;
   }
+
 }
 
 @keyframes mint {
+
   0% {
     top: -2500px;
   }
@@ -127,19 +133,23 @@ p {
   100% {
     top: 200px;
   }
+
 }
 
 @keyframes vanilla {
+
   0% {
-    top:-570px;
+    top: -570px;
   }
 
   100% {
     top: 50px;
   }
+
 }
 
 @keyframes text {
+
   0% {
     opacity: 0;
   }
@@ -153,4 +163,5 @@ p {
     opacity: 1;
     filter: blur(0);
   }
+
 }
